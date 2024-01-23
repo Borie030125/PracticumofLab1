@@ -25,11 +25,9 @@ public class PersonGenerator {
 
             persons.add(id + ", " + firstName + ", " + lastName + ", " + title + ", " + yearOfBirth);
 
-            // Asking if more data is to be entered
             moreData = SafeInput.getYNConfirm(scanner, "Want to add a new person?");
         }
 
-        // Writing data to the file
         try {
             writeToFile(persons, fileName);
             System.out.println("Successfully written to " + fileName);
